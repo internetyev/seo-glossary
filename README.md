@@ -12,3 +12,13 @@ How it is used:
 - The rejected-terms table lists words that were ruled out; they never come back.
 
 Terms of the semantic SEO framework follow Koray Tugberk Gubur's vocabulary (topical map, central entity, Core and Outer sections, macro and micro context, and the rest).
+
+## Checker
+
+`tools/check_terms.py` scans a document against the dictionary and reports rejected terms, unlisted abbreviations, working-document loanwords in reader copy, and candidate coined labels (quoted, Title Case or hyphenated phrases not in the dictionary), with line numbers:
+
+```bash
+python3 tools/check_terms.py path/to/document.md
+```
+
+Add `--reader-facing` for article copy, `--json` for machine-readable output.
