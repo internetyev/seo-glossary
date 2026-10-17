@@ -5,10 +5,9 @@ Thank you for helping keep the vocabulary straight. This guide covers what a goo
 ## What to contribute
 
 - **A missing term** that SEO practitioners actually use. Include where you have seen it used (a tool's interface, a vendor's documentation, a conference talk, a client's own words).
-- **A Ukrainian form** for a row that has none or carries a `*`. The best evidence is usage by Ukrainian practitioners: an industry article, a tool localisation, a job post, a community thread. A dictionary translation on its own is not evidence; the glossary records the living form, which is often a loanword.
 - **A correction** to a meaning that is wrong or too narrow.
 - **A rejected term**: a word that is being used for something the glossary already names, or an invented label that keeps appearing in AI-written text. Give the replacement.
-- **Another language pair**, as a new file built on the same ten-section structure.
+- **A translation of the glossary into another language**, as a separate file with the same section structure.
 
 Not wanted: terms coined for one company's product, marketing names for ordinary things, or rows without a meaning.
 
@@ -17,11 +16,10 @@ Not wanted: terms coined for one company's product, marketing names for ordinary
 Sections 1 to 6:
 
 ```
-| English term | Ukrainian form | one line of meaning | words not to use instead |
+| English term | one line of meaning | words not to use instead |
 ```
 
 - English: lowercase unless it is a proper name or an established abbreviation. Several accepted forms are separated by commas (`interlinking, internal linking`).
-- Ukrainian: the form used in practice. Append `*` to a proposal that nobody has confirmed. Loanwords allowed only in working documents also go to section 9.
 - Meaning: one sentence, no definition-of-a-definition, no marketing.
 - Do not use: leave empty when nothing was ruled out.
 
@@ -31,9 +29,9 @@ Section 8 (rejected terms):
 | rejected term | use instead | date or short reason |
 ```
 
-Section 7 (abbreviations) and section 9 (loanwords) are comma-separated lists.
+Section 7 (abbreviations) is a comma-separated list.
 
-Every change adds one line to section 10 (change log) with the date.
+Every change adds one line to section 9 (change log) with the date.
 
 ## Style
 
@@ -46,8 +44,7 @@ Every change adds one line to section 10 (change log) with the date.
 
 1. Does the term exist in use, or only in the proposal? Usage wins.
 2. Does the glossary already name the thing? Then the new word is either a synonym to add to the English column or a rejected term.
-3. Is the Ukrainian form the one practitioners use? Two independent usage examples remove the `*`.
-4. Does the meaning read correctly to someone outside SEO?
+3. Does the meaning read correctly to someone outside SEO?
 
 Small pull requests (one to five rows) are merged fastest. For anything structural, open an issue first.
 

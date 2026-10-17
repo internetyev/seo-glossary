@@ -1,6 +1,6 @@
-# SEO glossary (English - Ukrainian)
+# SEO glossary
 
-A working glossary of SEO terms: English, the Ukrainian form used in practice, one line of meaning, and the words that were ruled out. It exists so that people and AI agents writing SEO documents use one standard vocabulary and never coin their own.
+A working glossary of SEO terms: each term with one line of meaning and the words that were ruled out for it. It exists so that people and AI agents writing SEO documents use one standard vocabulary and never coin their own.
 
 The glossary itself is one file: [seo-glossary.md](seo-glossary.md).
 
@@ -8,7 +8,7 @@ The glossary itself is one file: [seo-glossary.md](seo-glossary.md).
 
 Every AI-written SEO document tends to invent a label or two: a "spine" for a site architecture, a "slate" for a content plan, a "token" for an anchor. Each invented word costs the reader a question and the author a correction. A shared glossary removes the question: the agent reads it before writing, uses only what is in it, and asks before adding anything.
 
-The same applies across languages. The Ukrainian SEO vocabulary mixes loanwords that practitioners use (анкор, донор, лінкбілдинг) with calques nobody uses (перелінкування), and only usage decides which is right. The glossary records the forms that are actually used.
+Without a shared glossary, different agents and prompts invent conflicting labels for the same concept. Sticking to one approved term per concept keeps briefs, audits and deliverables consistent across sessions.
 
 ## What is inside
 
@@ -22,10 +22,9 @@ The same applies across languages. The Ukrainian SEO vocabulary mixes loanwords 
 | 6. Data, tools and reporting | Search Console, crawlers, keyword and backlink indexes, report conventions |
 | 7. Abbreviations | the short forms that may appear without expansion |
 | 8. Rejected terms | words that were ruled out, with the replacement and the date |
-| 9. Ukrainian loanwords | industry loanwords allowed in working documents but not in copy that readers see |
-| 10. Change log | dated entries |
+| 9. Change log | dated entries |
 
-Each term row has four columns: English, Ukrainian, Meaning, Do not use. A Ukrainian form marked `*` is a proposal that has not yet been confirmed in practice; confirming or correcting those is the most useful contribution.
+Each term row has three columns: English, Meaning, Do not use. The most useful contribution is a missing term with a plain one-line meaning.
 
 ## How to use it
 
@@ -33,20 +32,20 @@ Each term row has four columns: English, Ukrainian, Meaning, Do not use. A Ukrai
 
 **As an AI agent:** read `seo-glossary.md` before writing any SEO deliverable, use only its terms in the listed form, and check any term that is not in it with the person you work for before using it. Ready-made skills for three agents are in [skills/](skills/): one each for Claude Code, OpenAI Codex and Gemini CLI. Each is a folder with a `SKILL.md`; copy it into the agent's skills directory as its README explains.
 
-**With the checker:** `tools/check_terms.py` scans a document against the glossary and reports, with line numbers, rejected terms, unlisted abbreviations, working-document loanwords in reader copy, and candidate coined labels (quoted, Title Case or hyphenated phrases that are not in the glossary).
+**With the checker:** `tools/check_terms.py` scans a document against the glossary and reports, with line numbers, rejected terms, unlisted abbreviations, and candidate coined labels (quoted, Title Case or hyphenated phrases that are not in the glossary).
 
 ```bash
 python3 tools/check_terms.py path/to/document.md
 ```
 
-Add `--reader-facing` for article copy and `--json` for machine-readable output. Candidates are questions for a reader, not verdicts.
+Add `--json` for machine-readable output. Candidates are questions for a reader, not verdicts.
 
 ## Contributing
 
-Contributions are welcome: a missing term, a better Ukrainian form, a correction to a meaning, a term that should be rejected, or a glossary in another language pair built on the same structure. The short version:
+Contributions are welcome: a missing term, a correction to a meaning, a term that should be rejected, or a translation of the glossary into another language as a separate file with the same structure. The short version:
 
 1. Open an issue for a question or a disputed form, or a pull request for a ready row.
-2. One term per row, in the section where it belongs, with all four columns filled. A Ukrainian form you have seen used in practice goes in without `*`; a proposal goes in with `*`.
+2. One term per row, in the section where it belongs, with all three columns filled.
 3. Rejected terms go to section 8 with the replacement and the date.
 4. Plain ASCII hyphens, no em or en dashes, no smart quotes. No client, company or project names.
 5. Add a line to the change log.
