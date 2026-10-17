@@ -1,4 +1,4 @@
-# SEO dictionary (English - Ukrainian)
+# SEO glossary (English - Ukrainian)
 
 A working reference of SEO terms, in English with the Ukrainian form used in practice and one line of meaning each. Every SEO document, sheet, brief and skill run by an AI agent names things by the terms in this list. A term that is not here is checked with the owner before use; it is never invented.
 

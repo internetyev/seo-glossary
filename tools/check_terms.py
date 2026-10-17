@@ -17,7 +17,7 @@ import re
 import sys
 from pathlib import Path
 
-DEFAULT_DICT = Path(__file__).resolve().parent.parent / "seo-dictionary.md"
+DEFAULT_DICT = Path(__file__).resolve().parent.parent / "seo-glossary.md"
 
 # all-caps tokens that are ordinary technical words, not SEO abbreviations
 CAPS_WHITELIST = {
