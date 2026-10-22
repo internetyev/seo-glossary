@@ -188,7 +188,7 @@ How to read the tables:
 | English | Meaning | Do not use |
 | --- | --- | --- |
 | link-building (LB) | acquiring links from other sites; "LB" only in internal shorthand, written out on first use in any document |  |
-| backlink, inbound link | a link from another site |  |
+| backlink, inbound link | a link from a page of one crawlable website to another website; never a link between task cards, documents or spreadsheets (those are links) |  |
 | referring domain | a distinct root domain linking to the site; subdomains collapsed |  |
 | donor, donor site | the site that hosts the placed link |  |
 | target page | the page a link points at | acceptor |
@@ -382,6 +382,7 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | period 2 / period 3, H5, cohort codes in client documents | plain words with dates | 2026-10-06 |
 | green run (tests) | all tests pass | 2026-09-04 |
 | kw, pk, any coined shorthand | the full term | global rule |
+| backlink (for a link between task cards, Notion pages, Google Docs or Sheets) | link, link to the card | 2026-10-22 |
 
 ## 9. Change log
 
@@ -389,3 +390,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-10-17: reconciled against the Ahrefs, Moz and Semrush glossaries; 98 rows added, discrepancies listed in reconciliation-2026-10-17.md.
 - 2026-10-17: rulings on the six reconciliation discrepancies (featured snippet renamed in Ukrainian, rich snippet row added, the other five keep the glossary meaning) and 15 vendor synonyms added to the English column.
 - 2026-10-18: Ukrainian column, Ukrainian rejected-term rows and the loanwords section removed; the glossary is English only.
+- 2026-10-22: backlink restricted to links between crawlable websites; links between task cards and documents are links.
