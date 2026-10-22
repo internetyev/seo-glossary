@@ -60,6 +60,7 @@ How to read the tables:
 
 | English | Meaning | Do not use |
 | --- | --- | --- |
+| language version | the pages of a site in one language, named by the language: the German version, the English version; when they cover every template they are still a version | mirror, German mirror, language mirror, locale copy |
 | topical map | the Koray Gubur map: source context, central entity, Core and Outer sections, borders, nodes | five-layer map, spine |
 | semantic SEO | optimising for entities, attributes and intents rather than single keywords |  |
 | semantic content network | the whole set of pages built from one topical map, linked by context |  |
@@ -137,7 +138,7 @@ How to read the tables:
 | article syndication | republishing original content across external sites with canonical tags or attribution |  |
 | auto-generated content | text produced programmatically by software without human editorial oversight |  |
 | co-occurrence | keywords and entities appearing together within content bodies across a topical domain |  |
-| evergreen content | content that maintains search relevance and traffic value over time without expiring |  |
+| evergreen content, evergreen page | content, or a page, kept current with its topic and updated in place, as opposed to a news post that ages; a known term, used in client text without explanation and listed in the document's terminology section | state page, living page |
 | content pruning | removing, consolidating, or redirecting low-performing and outdated pages to raise site quality |  |
 | scraped content | third-party text republished without authorization or added value |  |
 | seo silo | structuring site sections into isolated thematic directories linked strictly within each cluster |  |
@@ -190,6 +191,7 @@ How to read the tables:
 | link-building (LB) | acquiring links from other sites; "LB" only in internal shorthand, written out on first use in any document |  |
 | backlink, inbound link | a link from a page of one crawlable website to another website; never a link between task cards, documents or spreadsheets (those are links) |  |
 | referring domain | a distinct root domain linking to the site; subdomains collapsed |  |
+| editorial referring domain | a referring domain whose link sits in an article or editorial page, not in an installation, a privacy policy or a spam network; the count used to compare link profiles |  |
 | donor, donor site | the site that hosts the placed link |  |
 | target page | the page a link points at | acceptor |
 | placement | one placed link or article on a donor |  |
@@ -238,11 +240,13 @@ How to read the tables:
 | sitewide link | a link that appears identically across every page of a website, such as in a footer or sidebar |  |
 | trustrank | an algorithmic link analysis method that filters web spam based on proximity to trusted seed sites |  |
 | unnatural links | artificial, paid, or manipulative links created to distort search engine rankings |  |
+| SEO services spam sites | automated sites that publish SEO reports about domains and link to every domain they list; they carry no authority | SEO checker sites |
 
 ## 5. Technical SEO
 
 | English | Meaning | Do not use |
 | --- | --- | --- |
+| hreflang pair | the English and the other-language version of the same page, declared to each other with hreflang; the unit in which language versions are audited | locale pair, language pair, locale copy |
 | crawl | a bot fetching pages |  |
 | crawl budget | how much Googlebot fetches per period |  |
 | crawl stats | the Search Console report |  |
@@ -258,7 +262,7 @@ How to read the tables:
 | redirect map / redirect rules | the old-to-new URL table / one rule per path, plain rows |  |
 | status code, 404, soft 404 | the HTTP response |  |
 | hreflang | the language-version annotation |  |
-| language version, hreflang alternate | the same page in another language; never a cannibal |  |
+| language version, hreflang alternate | the same page in another language; never a cannibal | mirror, locale copy |
 | rendering, JS rendering | building the page in the browser |  |
 | Core Web Vitals (CWV) | Google's page-experience metrics |  |
 | page speed | load performance |  |
@@ -314,6 +318,8 @@ How to read the tables:
 | subfolder | a directory path following the main domain name separated by forward slashes |  |
 | technical seo | optimizing site architecture, code, and server configurations to ensure bots can crawl and index pages smoothly |  |
 | x-robots-tag | an HTTP response header that delivers crawler directives for non-HTML files or full pages |  |
+| self-referencing canonical | a canonical tag that points at the page's own address |  |
+| partial sitemap | an XML sitemap with a subset of a site's URLs; the next partial sitemap is added when Google has indexed most of the current one | sitemap wave |
 
 ## 6. Data, tools and reporting
 
@@ -383,6 +389,9 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | green run (tests) | all tests pass | 2026-09-04 |
 | kw, pk, any coined shorthand | the full term | global rule |
 | backlink (for a link between task cards, Notion pages, Google Docs or Sheets) | link, link to the card | 2026-10-22 |
+| sitemap wave | partial sitemap, partial sitemap with a subset of URLs | 2026-10-22 |
+| SEO checker sites | SEO services spam sites | 2026-10-22 |
+| jump links (pagination) | links to distant pages | 2026-10-22 |
 
 ## 9. Change log
 
@@ -391,3 +400,7 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-10-17: rulings on the six reconciliation discrepancies (featured snippet renamed in Ukrainian, rich snippet row added, the other five keep the glossary meaning) and 15 vendor synonyms added to the English column.
 - 2026-10-18: Ukrainian column, Ukrainian rejected-term rows and the loanwords section removed; the glossary is English only.
 - 2026-10-22: backlink restricted to links between crawlable websites; links between task cards and documents are links.
+- 2026-10-22: language version row added (never mirror); editorial referring domain row added; AI Overview row added as a term that needs no explainer in client text.
+- 2026-10-22: hreflang pair row added (never locale pair); query template marked as a known term used without explanation in client text.
+- 2026-10-22: evergreen page row added (never state page); a known term used without explanation in client text.
+- 2026-10-22: self-referencing canonical and partial sitemap rows added (never sitemap wave); SEO services spam sites row added (never SEO checker sites); jump links replaced by links to distant pages.
