@@ -277,7 +277,7 @@ How to read the tables:
 | acceptance criteria | how a developer proves a fix is done |  |
 | root cause | the source fix, named before any symptom-hider |  |
 | situation sentence | the one sentence from audit step 1 naming the situation: gradual decline, sudden date-bound drop, launch spike then decline, plateau, growing but behind a competitor, new low-authority domain, channel-specific weakness, never ranked |  |
-| growth lever | what the domain lacks: backlinks, technical infrastructure, content, or fixes in the critical areas |  |
+| what the site lacks to grow | the step 1 audit answer to "what does this domain lack to grow organically?": more backlinks, better technical infrastructure, better content, or technical SEO fixes of the critical areas | growth lever, primary lever |
 | growth hypotheses | the ranked causes drafted in audit step 2 |  |
 | business type | news publisher, local business, SaaS, travel OTA, ecommerce, blog, service business, marketplace |  |
 | page group | a set of URLs sharing one template or folder, used to split Search Console data |  |
@@ -394,6 +394,7 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | SEO checker sites | SEO services spam sites | 2026-10-22 |
 | jump links (pagination) | links to distant pages | 2026-10-22 |
 | break date | plain words, such as "the traffic changed on {date}"; the term is not clear | 2026-10-23 |
+| growth lever, primary lever | what the site lacks to grow | 2026-10-23 |
 
 ## 9. Change log
 
@@ -407,3 +408,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-10-22: evergreen page row added (never state page); a known term used without explanation in client text.
 - 2026-10-22: self-referencing canonical and partial sitemap rows added (never sitemap wave); SEO services spam sites row added (never SEO checker sites); jump links replaced by links to distant pages.
 - 2026-10-23: break date removed and moved to the rejected terms (not clear); INP and CNAME added to the technical terms and the abbreviations.
+- 2026-10-23: growth lever renamed to "what the site lacks to grow"; growth lever and primary lever moved to the rejected terms (not clear).
