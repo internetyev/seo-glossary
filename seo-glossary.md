@@ -265,6 +265,7 @@ How to read the tables:
 | language version, hreflang alternate | the same page in another language; never a cannibal | mirror, locale copy |
 | rendering, JS rendering | building the page in the browser |  |
 | Core Web Vitals (CWV) | Google's page-experience metrics |  |
+| INP (Interaction to Next Paint) | the Core Web Vitals metric for how fast a page responds to a tap, click or key press; passes at 200 ms or less at the 75th percentile |  |
 | page speed | load performance |  |
 | mobile version | the page on phones |  |
 | subdomain | host under the main domain |  |
@@ -281,7 +282,6 @@ How to read the tables:
 | business type | news publisher, local business, SaaS, travel OTA, ecommerce, blog, service business, marketplace |  |
 | page group | a set of URLs sharing one template or folder, used to split Search Console data |  |
 | main template | a page template that carries a large share of pages, clicks or revenue; the unit the severity rule is measured on |  |
-| break date | the day the traffic curve changed, overlaid with updates, releases and migrations |  |
 | bot accessibility | whether content and links are in the HTML a bot receives |  |
 | server-rendered | present in the HTML response, not added by JavaScript in the browser |  |
 | hidden block | content present in the page but not visible or not in the HTML |  |
@@ -320,6 +320,7 @@ How to read the tables:
 | x-robots-tag | an HTTP response header that delivers crawler directives for non-HTML files or full pages |  |
 | self-referencing canonical | a canonical tag that points at the page's own address |  |
 | partial sitemap | an XML sitemap with a subset of a site's URLs; the next partial sitemap is added when Google has indexed most of the current one | sitemap wave |
+| CNAME record | a DNS record that points one host name to another host name; one that points at a released third-party service can be claimed by a stranger |  |
 
 ## 6. Data, tools and reporting
 
@@ -370,7 +371,7 @@ How to read the tables:
 
 ## 7. Abbreviations in use
 
-SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on first use), CSI (central search intent), PAA, CWV, IA, UGC, PR, AEO, GEO, PBN, GBP, YMYL, E-E-A-T, AMP, NAP, ccTLD, TLD, LCP, CLS, TBT, TF-IDF, QDF, SSL, TLS, HSTS, JSON-LD, CDN, CMS, CPC, CPM, SEM, UTM, SAB, API, DOM, DNS, NLU, LSA.
+SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on first use), CSI (central search intent), PAA, CWV, IA, UGC, PR, AEO, GEO, PBN, GBP, YMYL, E-E-A-T, AMP, NAP, ccTLD, TLD, LCP, CLS, TBT, INP, TF-IDF, QDF, SSL, TLS, HSTS, JSON-LD, CDN, CMS, CPC, CPM, SEM, UTM, SAB, API, DOM, DNS, CNAME, NLU, LSA.
 
 ## 8. Rejected terms (never reintroduce)
 
@@ -392,6 +393,7 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | sitemap wave | partial sitemap, partial sitemap with a subset of URLs | 2026-10-22 |
 | SEO checker sites | SEO services spam sites | 2026-10-22 |
 | jump links (pagination) | links to distant pages | 2026-10-22 |
+| break date | plain words, such as "the traffic changed on {date}"; the term is not clear | 2026-10-23 |
 
 ## 9. Change log
 
@@ -404,3 +406,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-10-22: hreflang pair row added (never locale pair); query template marked as a known term used without explanation in client text.
 - 2026-10-22: evergreen page row added (never state page); a known term used without explanation in client text.
 - 2026-10-22: self-referencing canonical and partial sitemap rows added (never sitemap wave); SEO services spam sites row added (never SEO checker sites); jump links replaced by links to distant pages.
+- 2026-10-23: break date removed and moved to the rejected terms (not clear); INP and CNAME added to the technical terms and the abbreviations.
