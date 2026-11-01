@@ -69,7 +69,7 @@ How to read the tables:
 | historical data | the ranking and click record a site accumulates on a topic over time |  |
 | cost of retrieval | the effort Google spends to crawl, render and understand a site; lower is rewarded |  |
 | knowledge domain | the queries, entities, layouts and user segments of one field |  |
-| contextual layer, contextual domain | the nested contexts a topic sits in, from field to sub-topic |  |
+| contextual layer, contextual domain | the nested contexts of a topic, from field to sub-topic |  |
 | macro context | the one main focus of a page: one entity + attribute pair, verbalised in the title |  |
 | micro context | one heading-level sub-focus inside a page |  |
 | contextual vector | the direction a page's headings take from the macro context through the micro contexts |  |
@@ -78,7 +78,7 @@ How to read the tables:
 | contextual bridge | the same thing as bridge below: the link and sentence that carry an Outer page into its Core cluster |  |
 | information gain | what a page adds beyond what the top-ranking pages already say |  |
 | query network | the set of related queries one topic generates; the map covers the network, not one keyword |  |
-| query template | the query pattern a page template targets, written with placeholders: `{product} pricing`, `{brand name}`, `{service} in {city}` |  |
+| query template | the typical search terms of one form, written with placeholders: `{product} pricing`, `{brand name}`, `{service} in {city}`; a page template targets it | query pattern |
 | token insertion methodology | Koray's topic-generation step: words placed before, between and after the central entity; "token" is allowed only in this name |  |
 | raw topical map | the entity + attribute pairs before they are verbalised into titles and slugs |  |
 | document design template | Koray's name for the fixed format of pages of one type; our term for it is page template |  |
@@ -94,7 +94,7 @@ How to read the tables:
 | variation type | one way the central search intent is varied: product, audience, location, industry |  |
 | proof rule | an industry or location hub ships only with a named case study or proof; otherwise it stays trend-watch |  |
 | coverage gap | an entity + attribute pair in the map with no page |  |
-| border violation | a live page that sits outside the topical borders |  |
+| border violation | a live page outside the topical borders |  |
 | knowledge graph of the site | the current state: the entity types the site has pages for, each with its page template and query template; the topical map is the future state |  |
 | entity definition | the map section: main entity, closely related entities, synonyms and lexical variants, entity types, critical attributes |  |
 | highest-receiving pages | the pages the internal linking logic sends most links to |  |
@@ -119,11 +119,11 @@ How to read the tables:
 | hub, hub page, content hub | a top-level entry page: locations hub, industry hub, city hub |  |
 | spoke, supporting page | a narrower page supporting a pillar |  |
 | money page | a page that sells |  |
-| page template | the fixed layout a page follows | archetype (except "site archetype" and "donor archetype" config keys) |
+| page template | the templated pages that target one query template, built on one fixed layout; the term is the same for every domain: `{city} {product}`, `{city} {category}`, `{brand} buying guide` | archetype (except "site archetype" and "donor archetype" config keys) |
 | entity type | one class of thing the site has pages for (product, category, brand, city, person); each entity type has one page template and one query template |  |
 | programmatic pages, programmatic SEO | pages generated from a database through one page template |  |
-| page type | the content-plan column: money page, hub, guide, template, tool, comparison |  |
-| content plan | the ordered list of pages to publish | slate, shortlist |
+| page type | the kind of page, which differs per domain: catalog page, static page, internal search results page |  |
+| content plan | the ordered list of pages to publish; may have a page type column and a page template column | slate, shortlist |
 | content brief | the writer-facing specification of one page |  |
 | content gap, content gap analysis | a topic competitors cover and the site does not |  |
 | thin content | a page with too little substance to rank |  |
@@ -145,6 +145,7 @@ How to read the tables:
 | landing page | a dedicated webpage designed to receive targeted search traffic and convert visitors |  |
 | search quality rater guidelines | the manual evaluation handbook used by human evaluators to assess website quality and trust signals |  |
 | ymyl | pages covering topics that directly impact a reader's health, financial security, or personal safety |  |
+| internal search results page (SRP) | a site's own search results page; SRP is rarely used, so it is written out on first use |  |
 
 ## 3. On-page
 
@@ -157,7 +158,7 @@ How to read the tables:
 | URL | the page address |  |
 | internal link | a link between two pages of the same site |  |
 | interlinking, internal linking | the practice and the plan of internal links |  |
-| interlinking section, interlinking block | a group of internal links on a page template (related products, nearby stores, top sellers); the established phrase | linking block (ambiguous) |
+| interlinking section, interlinking block | a group of internal links on a page template (related products, related categories, top products); the established phrase | linking block (ambiguous) |
 | anchor, anchor text, link text | the clickable text of a link | token |
 | anchor variant | one surface form of an anchor for a target page | token |
 | anchor repetition | the same anchor to the same page; max 3 per site, up to 10 for a quality node's main keyword |  |
@@ -192,7 +193,7 @@ How to read the tables:
 | link-building (LB) | acquiring links from other sites; "LB" only in internal shorthand, written out on first use in any document |  |
 | backlink, inbound link | a link from a page of one crawlable website to another website; never a link between task cards, documents or spreadsheets (those are links) |  |
 | referring domain | a distinct root domain linking to the site; subdomains collapsed |  |
-| editorial referring domain | a referring domain whose link sits in an article or editorial page, not in an installation, a privacy policy or a spam network; the count used to compare link profiles |  |
+| editorial referring domain | a referring domain whose link is in an article or editorial page, not in an installation, a privacy policy or a spam network; the count used to compare link profiles |  |
 | donor, donor site | the site that hosts the placed link |  |
 | target page | the page a link points at | acceptor |
 | placement | one placed link or article on a donor |  |
@@ -213,7 +214,7 @@ How to read the tables:
 | link spam | low-quality automated links |  |
 | disavow | the Search Console rejection list |  |
 | penalty, manual action | a Google-applied ranking penalty |  |
-| subdomain hijack | spam hosted on a client's subdomain; signalled by gambling anchors pointing at it |  |
+| subdomain hijack | spam hosted on a client's subdomain; signalled by spam anchors pointing at it |  |
 | tier-2 links, tiered link building | links to the pages that link to the site |  |
 | PBN | a private blog network; a donor type to reject |  |
 | spam score | a provider's spam estimate for a domain (Ahrefs is_spam is incomplete) |  |
@@ -261,6 +262,7 @@ How to read the tables:
 | redirect, 301, 302 | one URL sending to another |  |
 | redirect chain | two or more redirects in a row |  |
 | redirect map / redirect rules | the old-to-new URL table / one rule per path, plain rows |  |
+| migration plan | the plan for moving a site from its current structure to the target structure: the redirect map, the changes that ship with each move, the launch sequence, the checks after launch and the monitoring |  |
 | status code, 404, soft 404 | the HTTP response |  |
 | hreflang | the language-version annotation |  |
 | language version, hreflang alternate | the same page in another language; never a cannibal | mirror, locale copy |
@@ -284,6 +286,7 @@ How to read the tables:
 | page group | a set of URLs sharing one template or folder, used to split Search Console data |  |
 | main template | a page template that carries a large share of pages, clicks or revenue; the unit the severity rule is measured on |  |
 | bot accessibility | whether content and links are in the HTML a bot receives |  |
+| crawl depth | the number of clicks it takes to reach a page from the homepage through internal links, as the Crawl Depth column of a crawl counts it |  |
 | server-side rendered, server-side rendering (SSR) | present in the HTML response, not added by JavaScript in the browser; the standard phrase for it | rendered on the server, server-rendered |
 | hidden block | content present in the page but not visible or not in the HTML |  |
 | parameter URL | a page addressed only through a query string, such as /listings?city={city} |  |
@@ -405,6 +408,18 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | growth lever, primary lever | what the site lacks to grow | 2026-10-23 |
 | rendered on the server, server-rendered | server-side rendered, server-side rendering (SSR) | 2026-10-23 |
 | linking block | interlinking section, interlinking block (ambiguous) | 2026-10-25 |
+| traffic sits on, clicks sit on (a page, a group of pages, a site) | a page, a group of pages or a site has traffic: "the homepage has {n}% of the clicks" | 2026-10-27 |
+| demand sits on | "the demand is present for", "there is some demand for" | 2026-11-01 |
+| query pattern | query template; "pattern" stays for observed behaviour, such as a crawl pattern | 2026-11-01 |
+| traffic programme | plain words, such as "the pages that can bring organic traffic" | 2026-11-01 |
+| apex | root domain URL, root domain, or just root | before 2026-11-01 |
+| emit | has, contains, renders, returns (for HTML elements, meta tags, headers, canonicals) | before 2026-11-01 |
+| subtree | section, or the literal path prefix | before 2026-11-01 |
+| deep tail | pages buried below 3+ crawl depth, long-tail pages reachable only after 3+ clicks | before 2026-11-01 |
+| obscures intent | may prevent some useful bots from accessing the pages, such as LLMs | before 2026-11-01 |
+| low BV | low business value | before 2026-11-01 |
+| high BV | high business value | before 2026-11-01 |
+| Panda-like quality drag | thin pages at scale hurt the perceived quality of the section | before 2026-11-01 |
 
 ## 9. Change log
 
@@ -423,3 +438,10 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-10-25: interlinking section and interlinking block added as the established phrases for a group of internal links; linking block rejected (ambiguous).
 - 2026-10-26: seven AI visibility report terms added to section 6: mention share, citation share, share of voice (AI answers), after searching the web / from memory, round, average rank, topic.
 - 2026-10-26: examples in the query template, variation type, entity type, business type, topic (AI visibility) and diaspora rows rewritten with placeholders and generic nouns; an example never names an industry.
+- 2026-10-27: crawl depth and migration plan rows added to the technical terms.
+- 2026-10-27: "traffic sits on" moved to the rejected terms; a page, a group of pages or a site has traffic.
+- 2026-11-01: query template, page template and page type redefined: a query template is the typical search terms of one form, a page template is the templated pages that target it, and a page type is the kind of page, which differs per domain; a content plan may have both columns.
+- 2026-11-01: internal search results page (SRP) added; SRP stays out of section 7 because it is rarely used.
+- 2026-11-01: "demand sits on", "query pattern" and "traffic programme" rejected.
+- 2026-11-01: apex, emit, subtree, deep tail, obscures intent, low BV, high BV and Panda-like quality drag moved here from the writing style skill; term rulings now live only in this glossary.
+- 2026-11-01: examples in the SERP cohort, interlinking section, subdomain hijack and rejected traffic rows rewritten with generic nouns; "sits" removed from three meanings.
