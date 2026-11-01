@@ -81,7 +81,7 @@ How to read the tables:
 | query template | the typical search terms of one form, written with placeholders: `{product} pricing`, `{brand name}`, `{service} in {city}`; a page template targets it | query pattern |
 | token insertion methodology | Koray's topic-generation step: words placed before, between and after the central entity; "token" is allowed only in this name |  |
 | raw topical map | the entity + attribute pairs before they are verbalised into titles and slugs |  |
-| document design template | Koray's name for the fixed format of pages of one type; our term for it is page template |  |
+| document design template | Koray's name for the fixed format of pages of one type; our term for the pages built on it is page template |  |
 | vastness, depth, momentum | the three quality measures of a map: how many pairs, how fully each is answered, how fast it is published |  |
 | publication frequency | the planned cadence that sets momentum |  |
 | lexical semantics | synonyms, hypernyms and lexical variants used to phrase the raw map |  |
