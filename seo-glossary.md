@@ -146,6 +146,7 @@ How to read the tables:
 | search quality rater guidelines | the manual evaluation handbook used by human evaluators to assess website quality and trust signals |  |
 | ymyl | pages covering topics that directly impact a reader's health, financial security, or personal safety |  |
 | internal search results page (SRP) | a site's own search results page; SRP is rarely used, so it is written out on first use |  |
+| category page | a page that lists the items of one category of a site | facet |
 
 ## 3. On-page
 
@@ -171,7 +172,7 @@ How to read the tables:
 | structured data, schema markup | JSON-LD and the schema.org types |  |
 | FAQ block | the question-answer section of a page |  |
 | Q&A block | a question-and-answer section whose answers link out to supporting pages |  |
-| bridge block, closing bridge section | the closing section of an article that links into the hub it supports |  |
+| CTA block, CTA block at the end of the content section | the block at the end of the content section of an article that links to its target page | bridge block, closing bridge section |
 | author bio, byline | the author identity on a page; named person with a live profile, never a role |  |
 | freshness, content refresh, content decay | how recent a page is, the update that restores it, and the traffic loss that calls for it |  |
 | TLDR | the short summary at the top of an article |  |
@@ -420,6 +421,9 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | low BV | low business value | before 2026-11-01 |
 | high BV | high business value | before 2026-11-01 |
 | Panda-like quality drag | thin pages at scale hurt the perceived quality of the section | before 2026-11-01 |
+| bridge block, closing bridge section | CTA block | 2026-11-02 |
+| bridge hub, target hub | target page | 2026-11-02 |
+| facet (for a category page) | category page | 2026-11-02 |
 
 ## 9. Change log
 
@@ -445,3 +449,5 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-11-01: "demand sits on", "query pattern" and "traffic programme" rejected.
 - 2026-11-01: apex, emit, subtree, deep tail, obscures intent, low BV, high BV and Panda-like quality drag moved here from the writing style skill; term rulings now live only in this glossary.
 - 2026-11-01: examples in the SERP cohort, interlinking section, subdomain hijack and rejected traffic rows rewritten with generic nouns; "sits" removed from three meanings.
+- 2026-11-02: bridge block renamed to CTA block; bridge block and closing bridge section moved to the rejected terms.
+- 2026-11-02: category page added; bridge hub and target hub rejected in favour of target page; facet rejected for a category page.
