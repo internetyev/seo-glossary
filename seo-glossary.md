@@ -347,6 +347,7 @@ How to read the tables:
 | year over year | the same window one year earlier | YoY in client docs |
 | brand versus non-brand split | Search Console data divided by branded queries |  |
 | rank tracking, position tracking | recorded positions over time for a keyword set |  |
+| poisoned SERP | a complete, normal-looking results page that Google returns to an automated request, with most organic results swapped for unrelated ones; it counts as poisoned when fewer than half of the keyword's usual sites appear on it; seen since September 2026 (https://dataforseo.com/blog/poisoned-serps-whats-happening-with-google-results-and-what-were-doing-about-it) | poisonous SERP |
 | SERP features | snippets, PAA, video, images, local pack, AI Overview and the rest |  |
 | knowledge panel | the entity card on the right of the results |  |
 | Google Business Profile (GBP), local pack | the business listing and the three-result map block |  |
@@ -424,6 +425,7 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 | bridge block, closing bridge section | CTA block | 2026-11-02 |
 | bridge hub, target hub | target page | 2026-11-02 |
 | facet (for a category page) | category page | 2026-11-02 |
+| poisonous SERP | poisoned SERP | 2026-11-04 |
 
 ## 9. Change log
 
@@ -451,3 +453,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-11-01: examples in the SERP cohort, interlinking section, subdomain hijack and rejected traffic rows rewritten with generic nouns; "sits" removed from three meanings.
 - 2026-11-02: bridge block renamed to CTA block; bridge block and closing bridge section moved to the rejected terms.
 - 2026-11-02: category page added; bridge hub and target hub rejected in favour of target page; facet rejected for a category page.
+- 2026-11-04: poisoned SERP added to the data and reporting terms, with the DataForSEO article as the reference; poisonous SERP rejected.
