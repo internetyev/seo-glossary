@@ -1,6 +1,6 @@
 # SEO glossary
 
-![SEO glossary](assets/seo-glossary-512.png)
+![SEO glossary](assets/seo-glossary-banner.png)
 
 A working glossary of SEO terms: each term with one line of meaning and the words that were ruled out for it. It exists so that people and AI agents writing SEO documents use one standard vocabulary and never coin their own.
 
