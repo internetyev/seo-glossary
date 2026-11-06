@@ -57,3 +57,21 @@ Contributions are welcome: a missing term, a correction to a meaning, a term tha
 ## License
 
 The glossary and the tools are released under the [Creative Commons Attribution 4.0](LICENSE) license: use, copy and adapt them freely, with attribution.
+
+## Author
+
+Andriy Terentyev, SEO consultant: https://terentyev.net
+
+In SEO for over 15 years in-house and as a consultant. SEO Strategy Advisor at KyivIndependent.com, former SEO Lead at Kiwi.com, and before that COO, CTO and CEO in tech startups. Niches: travel, news, SaaS and ecommerce.
+
+For the last three years I have worked solo, doing the work of a full SEO team with my proprietary SEO tools ([corgiseo.com](https://corgiseo.com)) and a set of AI agents. Write me for:
+
+- technical SEO of large sites,
+- SEO automation and QA monitoring,
+- AI-assisted content pipelines,
+- SEO competitive intelligence, and
+- custom AI agents for on-page SEO and linkbuilding, various SEO, GEO, SEM and social media tasks.
+
+Pet project: https://corgiseo.com, an SEO data layer for AI agents.
+
+LinkedIn: https://linkedin.com/in/terentyev
