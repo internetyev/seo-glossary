@@ -157,7 +157,7 @@ How to read the tables:
 | heading, header tags, heading tag | H1 to H6 |  |
 | slug | the last path segment of a URL |  |
 | URL | the page address |  |
-| internal link | a link between two pages of the same site |  |
+| internal link | a link whose target is a page on the site's own domain; a link or embed pointing to any other domain (YouTube, Instagram, a source site) is external, even inside an article body |  |
 | interlinking, internal linking | the practice and the plan of internal links |  |
 | interlinking section, interlinking block | a group of internal links on a page template (related products, related categories, top products); the established phrase | linking block (ambiguous) |
 | anchor, anchor text, link text | the clickable text of a link | token |
@@ -184,7 +184,7 @@ How to read the tables:
 | meta tags | HTML head elements providing machine-readable metadata about a webpage to search engines |  |
 | meta keywords | a deprecated HTML meta tag formerly used to declare keywords, now ignored by major search engines |  |
 | open graph | metadata tags defining how page titles, images, and descriptions display when shared on social networks |  |
-| outbound link | a hyperlink on a webpage pointing outward to a different domain |  |
+| outbound link, external link | a hyperlink on a webpage pointing outward to a different domain, including links and embeds to YouTube, Instagram and other platforms |  |
 | conversion rate | the percentage of page visits or clicks that result in a completed desired action |  |
 
 ## 4. Link-building and off-page
@@ -454,3 +454,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-11-02: bridge block renamed to CTA block; bridge block and closing bridge section moved to the rejected terms.
 - 2026-11-02: category page added; bridge hub and target hub rejected in favour of target page; facet rejected for a category page.
 - 2026-11-04: poisoned SERP added to the data and reporting terms, with the DataForSEO article as the reference; poisonous SERP rejected.
+- 2026-11-08: internal link limited to links whose target is on the site's own domain; links and embeds to YouTube, Instagram and any other domain are external; external link added as a synonym of outbound link.
