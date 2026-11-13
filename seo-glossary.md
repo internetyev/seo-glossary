@@ -147,6 +147,7 @@ How to read the tables:
 | ymyl | pages covering topics that directly impact a reader's health, financial security, or personal safety |  |
 | internal search results page (SRP) | a site's own search results page; SRP is rarely used, so it is written out on first use |  |
 | category page | a page that lists the items of one category of a site | facet |
+| scaled content abuse | Google's spam policy against many pages produced, by AI or otherwise, mainly to rank rather than to help readers |  |
 
 ## 3. On-page
 
@@ -186,6 +187,8 @@ How to read the tables:
 | open graph | metadata tags defining how page titles, images, and descriptions display when shared on social networks |  |
 | outbound link, external link | a hyperlink on a webpage pointing outward to a different domain, including links and embeds to YouTube, Instagram and other platforms |  |
 | conversion rate | the percentage of page visits or clicks that result in a completed desired action |  |
+| SEO check | a check built into a content editor that tests a page's title, meta description, headings and image alt text before publishing |  |
+| link preview | the card with a title, description and image that a messenger or social network shows for a shared link, built from the page's open graph tags |  |
 
 ## 4. Link-building and off-page
 
@@ -326,6 +329,8 @@ How to read the tables:
 | self-referencing canonical | a canonical tag that points at the page's own address |  |
 | partial sitemap | an XML sitemap with a subset of a site's URLs; the next partial sitemap is added when Google has indexed most of the current one | sitemap wave |
 | CNAME record | a DNS record that points one host name to another host name; one that points at a released third-party service can be claimed by a stranger |  |
+| trailing slash | the "/" at the end of a URL path; the URL with it and the URL without it are two different URLs |  |
+| percent-encoded URL | a URL in which characters are written as a percent sign and two hexadecimal digits, such as %2F for a slash |  |
 
 ## 6. Data, tools and reporting
 
@@ -455,3 +460,4 @@ SEO, SERP, KD, GSC, SF, DFS, TDH, CTR, DR, LB (write out "link-building" on firs
 - 2026-11-02: category page added; bridge hub and target hub rejected in favour of target page; facet rejected for a category page.
 - 2026-11-04: poisoned SERP added to the data and reporting terms, with the DataForSEO article as the reference; poisonous SERP rejected.
 - 2026-11-08: internal link limited to links whose target is on the site's own domain; links and embeds to YouTube, Instagram and any other domain are external; external link added as a synonym of outbound link.
+- 2026-11-13: trailing slash, percent-encoded URL, scaled content abuse, SEO check and link preview added.
